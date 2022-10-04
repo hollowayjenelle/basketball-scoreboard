@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
     <title>Basketball Scoreboard</title>
 </head>
 <body>
@@ -13,25 +12,29 @@
         <div>
             <h3>HOME</h3>
             <div class="scoreboard">
-                <span id="home-score">0</span>
+                <p id="home-score">0</p>
             </div>
             <div class="addscores">
-                <button>+1</button>
-                <button>+2</button>
-                <button>+3</button>
+                <button onclick="add1Home()">+1</button>
+                <button onclick="add2Home()">+2</button>
+                <button onclick="add3Home()">+3</button>
             </div>
         </div>
         <div>
+            <button id="newgame" onclick="newgame()">NEW GAME</button>
+        </div>
+        <div>
             <h3>GUEST</h3>
-            <div class="socreboard">
-                <span id="guest-score">0</span>
+            <div class="scoreboard">
+                <p id="guest-score">0</p>
             </div>
             <div class="addscores">
-                <button>+1</button>
-                <button>+2</button>
-                <button>+3</button>
+                <button onclick="add1Guest()">+1</button>
+                <button onclick="add2Guest()">+2</button>
+                <button onclick="add3Guest()">+3</button>
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
